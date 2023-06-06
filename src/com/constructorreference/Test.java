@@ -26,6 +26,7 @@ public class Test {
 //		MyInterface myinterface3 = Employee::new;
 //		myinterface3.get();
 		
+//		using java8 method reference and parameter reference
 		MyInterface myinterface4 =Employee::new;
 		myinterface4.get(10,"kiran");
 
