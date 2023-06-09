@@ -25,29 +25,22 @@ public class TerminalOperation {
 // how can we  add toset
 //		Set<String> mySet = stream.collect(Collectors.toSet());
 //		System.out.println(mySet);
-		
 
-		
-		
 //	foreach
 //		it is a terminal operation which is used to iterate over collection or streams of objects
-		Stream stream2 = Stream.of("A","C","B");
+		Stream stream2 = Stream.of("A", "C", "B");
 		stream2.forEach(System.out::println);
-		
-		
+
 //forEach Order
-		
-		Stream stream3 = Stream.of("B","A","C");
+
+		Stream stream3 = Stream.of("B", "A", "C");
 		stream3.forEachOrdered(System.out::println);
-		
-		
+
 //before java8
 //		String st = Capitalized("kiran");
 //		System.out.println(st);
 
 	}
-
-	
 
 //	String st = Capitalized("kiran");
 
@@ -57,7 +50,7 @@ public class TerminalOperation {
 			return str;
 		return str.substring(0, 1).toUpperCase() + str.substring(1);
 	}
-	
+
 	public static final String Capitalized(String str, int startindex, int lastindex) {
 
 		if (str == null || str.length() == 0)

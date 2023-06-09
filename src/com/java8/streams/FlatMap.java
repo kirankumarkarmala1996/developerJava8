@@ -7,7 +7,7 @@ import java.util.Optional;
 public class FlatMap {
 	public static void main(String[] args) {
 // before java8		
-		List<Integer>intlist =Arrays.asList(22,55,44,88,71,4,32,69,81);
+		List<Integer> intlist = Arrays.asList(22, 55, 44, 88, 71, 4, 32, 69, 81);
 //		int min=intlist.get(0);
 //		for(Integer num:intlist) {
 //			if(min>num) {
@@ -15,16 +15,12 @@ public class FlatMap {
 //		}
 //		}
 //		System.out.println("minimum num :"+min);
-		
-		
-//optional which is used to avoid the null pointer exception
-		
-		Optional<Integer>optional = intlist.stream().min(Integer::compareTo);
-		System.out.println("min value : "+optional.get());
-		
 
-		
-		
+//optional which is used to avoid the null pointer exception
+
+		Optional<Integer> optional = intlist.stream().min(Integer::compareTo);
+		System.out.println("min value : " + optional.get());
+
 	}
 
 }

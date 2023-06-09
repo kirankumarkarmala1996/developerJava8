@@ -7,12 +7,17 @@ import java.util.Optional;
 public class Reduce {
 
 	public static void main(String[] args) {
-
+// reduce  returns the single value
+		
+//		this method perform reduce operation on elements of streams  
+//		using initial value and binary operation
+		
+		
 		int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 //		int sum = Arrays.stream(numbers).reduce(0, (a, b) -> a + b);
 //
 //		  System.out.println("sum : " + sum);
-
+								//returns the single value
 		int sum = Arrays.stream(numbers).reduce(0, Integer::sum);
 		System.out.println(sum);// 55
 
