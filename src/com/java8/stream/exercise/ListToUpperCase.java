@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class ListToUpperCase extends ComparatorExample  {
@@ -23,9 +25,7 @@ public class ListToUpperCase extends ComparatorExample  {
 //		foreach
 //		listtoUpper.stream().map(String::toUpperCase).forEach(System.out::println);
 
-//		how to get  only list of names
-		
-		
+//How to get  only list of names
 		List<Student>result=new ArrayList<Student>();
 		result.add(new Student("mkyong", new BigDecimal("70000"), 33));
 		result.add(new Student("alvin", new BigDecimal("80000"), 20));
@@ -33,8 +33,10 @@ public class ListToUpperCase extends ComparatorExample  {
 		result.add(new Student("iris", new BigDecimal("170000"), 55));
 
 		System.out.println();
+//		result.stream().map(stu->stu.getName().toUpperCase()).forEach(System.out::println);
 		
-		result.stream().map(stu->stu.getName().toUpperCase()).forEach(System.out::println);
+		
+		
 		
 	}
 
