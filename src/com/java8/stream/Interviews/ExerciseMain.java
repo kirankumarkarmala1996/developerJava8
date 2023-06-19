@@ -111,6 +111,8 @@ public class ExerciseMain {
 //	Given list of Employees, you want to group them by name
 	public void Exercise10() {
 		Map<String, List<Students>> map=studentList.stream().collect(Collectors.groupingBy(Students::getSname));
+//		Map<List<String>, List<Students>> map1=studentList.stream().collect(Collectors.groupingBy(Students::getListcites));
+//		Map<Integer, List<Students>> map2=studentList.stream().collect(Collectors.groupingBy(Students::getSid));
 		map.forEach((k,v)->{
 			System.out.println(k+":"+v);
 		});
