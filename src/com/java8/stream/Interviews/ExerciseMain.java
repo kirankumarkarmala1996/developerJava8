@@ -2,6 +2,7 @@ package com.java8.stream.Interviews;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.StringJoiner;
@@ -109,6 +110,10 @@ public class ExerciseMain {
 	}
 //	Given list of Employees, you want to group them by name
 	public void Exercise10() {
+		Map<String, List<Students>> map=studentList.stream().collect(Collectors.groupingBy(Students::getSname));
+		map.forEach((k,v)->{
+			System.out.println(k+":"+v);
+		});
 		
 	}
 
@@ -129,6 +134,9 @@ public class ExerciseMain {
 		exe.exercise8();
 		System.out.println("======exercise9=======");
 		exe.exercise9();
+		System.out.println("======exercise10=======");
+		exe.Exercise10();
+		
 
 	}
 
